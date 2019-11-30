@@ -2,6 +2,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { PagesnotfoundComponent } from './pages/pagesnotfound/pagesnotfound.component';
 
 // import { Name2Component } from './';
 // import { Name3Component } from './';
@@ -9,11 +12,11 @@ import { AboutComponent } from './pages/about/about.component';
 // import { PageNotFoundComponent } from './';
 
 const routes: Routes = [
-    { path: 'about', component: AboutComponent }
-    // { path: 'path2', component: Name2Component },
-    // { path: 'path3', component: Name3Component },
-    // { path: 'path4', component: Name4Component },
-    // { path: '**', component: PageNotFoundComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'products', component: ProductsComponent },
+    { path: '', component: HomeComponent },
+    { path: '**', component: PagesnotfoundComponent }
 
     //{ path: 'path/:routeParam', component: MyComponent },
     //{ path: 'staticPath', component: ... },
