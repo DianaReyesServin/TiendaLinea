@@ -11,6 +11,7 @@ import { CardsComponent } from './components/cards/cards.component';
 
 import { AppRoutingModule } from './app.routes';
 import { PagesnotfoundComponent } from './pages/pagesnotfound/pagesnotfound.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PagesnotfoundComponent } from './pages/pagesnotfound/pagesnotfound.comp
     ProductdetailComponent,
     ProductsComponent,
     CardsComponent,
-    PagesnotfoundComponent
+    PagesnotfoundComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
