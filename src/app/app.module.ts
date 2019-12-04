@@ -12,6 +12,8 @@ import { CardsComponent } from './components/cards/cards.component';
 import { AppRoutingModule } from './app.routes';
 import { PagesnotfoundComponent } from './pages/pagesnotfound/pagesnotfound.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CategoriesComponent } from './pages/products/categories/categories.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ProductsComponent,
     CardsComponent,
     PagesnotfoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
