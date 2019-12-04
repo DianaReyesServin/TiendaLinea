@@ -7,8 +7,8 @@
         <p class="card-text">{{prod.categoria}}</p>
         <p class="card-text">{{prod.proveedor}}</p>
         <p class="card-text">{{prod.provDescr}}</p>
-        <span class ="badge badge-{{colorLabel(prod.precio)}}">$({{prod.precio |number}}) </span>
-    
+        <p class="card-text">{{prod.precio}}</p>
+        <button class="btn btn-primary" [routerLink]="['/product', prod.codigo, category]">Ver Producto</button> 
       </div>
     </div> 
   </div>
