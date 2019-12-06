@@ -18,12 +18,11 @@
         <li class="nav-item " routerLinkActive="active">
           <a class="nav-link" [routerLink]="['/about']">About <span class="sr-only">(current)</span></a>
         </li>
-       
-       
-        
       </ul>
-
-      
     </div>
-    
+  </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#"><i class="fas {{breadcrumb.icon}}"></i>{{breadcrumb.title}}</a></li>
+    </ol>
   </nav>

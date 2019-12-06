@@ -14,8 +14,8 @@ const routes: Routes = [
     { path: 'products', component: ProductsComponent, data: {title: 'Productos', icon: 'fa-car'},
     children: [
         { path: 'categories/:category', component: CategoriesComponent },
-        { path: '', redirectTo: 'categories/Cards', pathMatch: 'full'},
-        { path: '**', redirectTo: 'categories/Cards', pathMatch: 'full'}
+        { path: '', redirectTo: 'categories/Cars', pathMatch: 'full'},
+        { path: '**', redirectTo: 'categories/Cars', pathMatch: 'full'}
     ]},
     { path: 'product/:code/:category', component: ProductdetailComponent },
     { path: '', component: HomeComponent },
