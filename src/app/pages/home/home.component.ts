@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import PNotify from 'pnotify/dist/es/PNotify';
+import PNotifyButtons from 'pnotify/dist/es/PNotifyButtons';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor() { 
+        PNotifyButtons; // Initiate the module. Important!
+        PNotify.alert({
+          title: "Bienvenido!!",
+          text:"Proyecto de Miguel, Diana y Lupita",
+          animation: 'fade',
+          icon: 'icon-bell-check',
+          addClass: 'alert alert-success border-success alert-styled-right alert-arrow-right',
+          shadow:true,
+          hide:true,
+          delay:1000*10,
+          type:'success'
+        });
+      }
+    
   ngOnInit() {
   }
-
 }
